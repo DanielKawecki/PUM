@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--Question displayed here-->
+
+    <!--Question counter-->
+
+    <TextView
+        android:id="@+id/question_counter"
+        android:layout_width="279dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="34sp" />
+
+    <!--Possible answers here-->
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="185dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="300dp"
+        android:layout_height="125dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#E8E8E8"
+        android:gravity="center"
+        android:padding="5sp"
+        android:text="Pytanie?"
+        android:textSize="20sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        >
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="350dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:background="#00FFFFFF"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="34sp"
+            android:visibility="invisible" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="282dp"
+            android:layout_height="262dp"
+            android:layout_gravity="center"
+            android:padding="10sp">
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:padding="5dp"
+                android:text="RadioButton"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:text="RadioButton"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:text="RadioButton"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/radio4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:text="RadioButton"
+                android:textSize="20sp" />
+
+            <!--Button for next question-->
+
+        </RadioGroup>
+    </androidx.cardview.widget.CardView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="355dp"
+        android:layout_height="69dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="26dp"
+        android:backgroundTint="#673AB7"
+        android:text="Następne"
+        android:textColor="#EBEBEB"
+        android:textSize="34sp" />
+
+</LinearLayout>
