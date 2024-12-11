@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_background"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/subject_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fizyka"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_column="0"
+        android:layout_row="0"/>
+
+    <TextView
+        android:id="@+id/average_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_gravity="end"
+        android:text="Średnia: 4,5"
+        android:layout_marginTop="4dp"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:layout_column="1"
+        android:layout_row="1"/>
+
+    <TextView
+        android:id="@+id/list_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_gravity="end"
+        android:text="Liczba list: 2"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/exercise_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Liczba list: 2"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginTop="4dp"
+        android:layout_column="0"
+        android:layout_row="1"/>
+</GridLayout>
